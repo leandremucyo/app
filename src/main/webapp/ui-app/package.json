@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leandremucyo/spring-boot-webjars.git"
+    "url": "git+https://github.com/leandremucyo/app.git"
   },
   "author": "DeGisa",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/leandremucyo/spring-boot-webjars/issues"
+    "url": "https://github.com/leandremucyo/app/issues"
   },
-  "homepage": "https://github.com/leandremucyo/spring-boot-webjars#readme",
+  "homepage": "https://github.com/leandremucyo/app#readme",
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
