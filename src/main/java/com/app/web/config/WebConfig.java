@@ -10,14 +10,14 @@ import org.springframework.web.servlet.config.annotation.DefaultServletHandlerCo
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-public class WebConfig extends WebMvcConfigurerAdapter {
+public class WebConfig implements WebMvcConfigurer {
  
     @Bean
     public ViewResolver getViewResolver() {
@@ -36,8 +36,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/webjars/**","/resources/**").addResourceLocations("/webjars/","/resources/");
-        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/").setCachePeriod(3600*24);;
-        super.addResourceHandlers(registry);
+        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/").setCachePeriod(3600*24);
     }
     @Override
     public void addInterceptors(InterceptorRegistry registry) {

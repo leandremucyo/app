@@ -1,6 +1,10 @@
 <head>
 	<title>appPlus</title>
 	<link rel="icon" type="image/x-icon" href="/app/static/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/app/static/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/app/static/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/app/static/favicon-16x16.png">
+	<link rel="manifest" href="/app/static/site.webmanifest">
 	<link rel="stylesheet" href="/app/ui-app/bin/main.bundle.css" />
     <script src="/app/webjars/jquery/3.1.1/jquery.min.js"></script>
     <script src="/app/webjars/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
